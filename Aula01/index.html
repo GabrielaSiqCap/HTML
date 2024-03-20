@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gab</title>
+
+    <style>
+        body{
+            background: #7ddfff;
+            color: rgb(6, 20, 92);
+            text-shadow: 2px 2px 4px #2943b8;
+        }
+        h1 {
+            color:rgb(0, 0, 0);
+            background: #62cfed;
+            text-align: center;
+        }
+
+    </style>
+
+  </head>
+
+  <body contenteditable>
+    <h1>Magnificat</h1>
+    <p>"Ele olhou, sua humilde serva e nela viu, plena graça(...)" - Colo de Deus</p>
+
+    <h1>Aula 01 - HTML | CSS | JS</h1>
+    <h2>Alerta de mensagem!</h2>
+    <p style="text-align: center">
+        <button onclick="alerta()"
+        style ="">🚨Alerta!🚨</button>
+    </p>
+
+<h2>Altere a cor de fundo do site clicando em uma das cores abaixo:</h2>
+<p style="text-align: center" >
+<button onclick="verde()"style ="">Verde</button>
+<button onclick="amarelo()"style ="">Amarelo</button>
+<button onclick="azul()"style ="">Azul</button>
+<button onclick="branco()"style ="">Branco</button>
+</p>
+
+<!-- document.getElem entsByTagName("h1")[0].style.color = "#517757" -->
+<!-- document.getElementsByTagName("body")[0].style.background = "#7ddfff" -->
+  </body>
+    <script>
+        console.log("Olá Mundo!");
+
+        function alerta() {
+        var nome = prompt("Olá, informe seu nome:");
+        alert(`Olá ${nome}!`);
+      }
+
+        function verde() {
+        document.getElementsByTagName("body")[0].style.background = "green" 
+        }
+        function amarelo() {
+        document.getElementsByTagName("body")[0].style.background = "yellow" 
+        }
+        function azul() {
+        document.getElementsByTagName("body")[0].style.background = "blue" 
+        }
+        function branco() {
+        document.getElementsByTagName("body")[0].style.background = "white" 
+        }
+    </script>
+</html>
