@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/Aula02/form.html? -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    
+<link rel="stylesheet" href="./Formulário_files/style.css"></head>
+<body>
+    <h1 class="textoCentro fundoLink">
+        <a href="http://127.0.0.1:5500/Aula02/index.html">Home</a>
+        <a href="https://www.google.com.br/" target="_blank">Google</a>
+        <a href="https://github.com/GabrielaSiqCaptarget=" _parent"="">Git-Hub</a>
+        <a href="https://twitter.com/" target="_self">X - Twitter</a>
+        <a href="https://instagram.com/" target="_top">Instagram</a>
+    </h1>
+
+    <form class="textoCentro" onsubmit="console.log(`Enviou`)">
+        <h3>Entre em contato</h3>
+        <p>Ficaremos felizes em atende-lo</p>
+        <p>
+        <input id="nome" type="text" size="40" placeholder="Nome:" required="">
+        <br>
+        <input id="email" type="email" size="40" placeholder="E-mail:" required="">
+        <br>
+        <textarea id="areaTexto" name="" cols="40" rows="10" placeholder="Mensagem:" minlength="10" required=""></textarea>
+        </p>
+        <input type="button" onclick="console.log(document.getElementById(`nome`).value)" value="Enviar">
+    </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
