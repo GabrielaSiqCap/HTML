@@ -1,0 +1,17 @@
+/* faz aplicação global de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Váriaeis que podem ser usadas para todo documento */
+/* Ativo somente no Dark Mode */
+:root{
+    --bg-url: url(../img/fundoroxo.png)
+}
+
+body{
+    background: var(--bg-url) no-repeat top center / cover;
+    height: 100vh;
+}
