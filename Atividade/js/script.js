@@ -7,8 +7,12 @@ trocaTema = () => {
   document.documentElement.classList.toggle("light");
 
 const isLight = document.documentElement.classList.contains("light");
- 
+
 const imagem = isLight ? "./img/gabicolorida.jpg" : "./img/gabipretoe.jpg";
 
+const trocaalt = isLight ? "./img/gabicolorida.jpg" : "./img/gabipretoe.jpg";
+
 document.querySelector("#perfil img").setAttribute("src", imagem);
+document.querySelector("#perfil img").setAttribute("alt", trocaalt);
+
 };

@@ -9,23 +9,23 @@
 /* Ativo somente no Dark Mode */
 :root {
   --bg-url: url(../img/fundoverdeescuro.jpg);
-  --text-color: #fff;
+  --text-color: #8bfad980;
   --stroke-color: rgba(118, 255, 214, 0.5);
-  --surface-color: rgba(118, 255, 170, 0.1);
-  --surface-color-hover: rgba(255, 255, 255, 0.2);
+  --surface-color: rgba(118, 255, 214, 0.288);
+  --surface-color-hover: rgba(118, 255, 214 0.2);
   --switch-bg-url: url(../img/MoonStars.svg);
-  --highlight-color: rgba(255, 255, 255, 0.3);
+  --highlight-color: rgba(89, 255, 205, 0.3);
   }
 
 /* class para criar um modo Light */
 .light {
   --bg-url: url(../img/fundoverdeclaro.jpg);
-  --text-color: #000;
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.1);
-  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --text-color: #1c2723;
+  --stroke-color: rgba(9, 68, 3, 0.5);
+  --surface-color: rgba(18, 70, 18, 0.1);
+  --surface-color-hover: rgba(9, 68, 3, 0.2);
   --switch-bg-url: url(../img/Sun.svg);
-  --highlight-color: rgba(0, 0, 0, 0.3);
+  --highlight-color: rgba(9, 68, 3, 0.3);
 }
 
 body {
@@ -75,7 +75,7 @@ body {
   height: 32px;
   border-radius: 50%;
   border: 0;
-  background: #fff var(--switch-bg-url) no-repeat center;
+  background: #90d6c1 var(--switch-bg-url) no-repeat center;
 
   position: absolute;
   z-index: 1;
