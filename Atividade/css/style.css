@@ -8,10 +8,10 @@
 /* Váriaeis que podem ser usadas para todo documento */
 /* Ativo somente no Dark Mode */
 :root {
-  --bg-url: url(../img/fundoroxo.png);
+  --bg-url: url(../img/fundoverdeescuro.jpg);
   --text-color: #fff;
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.1);
+  --stroke-color: rgba(118, 255, 214, 0.5);
+  --surface-color: rgba(118, 255, 170, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(../img/MoonStars.svg);
   --highlight-color: rgba(255, 255, 255, 0.3);
@@ -19,7 +19,7 @@
 
 /* class para criar um modo Light */
 .light {
-  --bg-url: url(../img/fundoroxodiurno.png);
+  --bg-url: url(../img/fundoverdeclaro.jpg);
   --text-color: #000;
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
